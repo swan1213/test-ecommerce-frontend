@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { addCart } from "../redux/action";
-
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -13,8 +10,6 @@ const Products = () => {
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
   let componentMounted = true;
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     const getProducts = async () => {
