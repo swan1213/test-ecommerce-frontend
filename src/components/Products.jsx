@@ -5,8 +5,6 @@ import { addCart } from "../redux/action";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
 import ProductCard from "./ProductCard";
 import "./ProductCard.css";
 
